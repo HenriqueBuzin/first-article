@@ -1,7 +1,7 @@
 version: '3.9'
 
 services:
-  java-app:
+  java:
     container_name: ackermann_function_java
     image: openjdk:17
     volumes:

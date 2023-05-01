@@ -2,8 +2,13 @@ version: '3.9'
 
 services:
   node:
-    image: node:latest
+    container_name: ackermann_function_node
+    image: node:20
     volumes:
-      - ./index.js:/app/index.js
+      - .:/app
     working_dir: /app
-    command: ["node", "program.js"]
+    command:
+      - sh
+      - -c
+      - |
+        node Program.js

@@ -1,7 +1,7 @@
 version: '3.9'
 
 services:
-  java-app:
+  java:
     container_name: bubble_sort_java
     image: openjdk:17
     volumes:
