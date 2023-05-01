@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+  node:
+    image: node:latest
+    volumes:
+      - ./index.js:/app/index.js
+    working_dir: /app
+    command: ["node", "program.js"]
