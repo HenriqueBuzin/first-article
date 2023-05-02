@@ -1,7 +1,0 @@
-version: '3.9'
-services:
-  scala:
-    image: openjdk:11
-    volumes:
-      - ./hello_world.scala:/hello_world.scala
-    command: scala /hello_world.scala
